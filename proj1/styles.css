@@ -10,7 +10,8 @@ body{
 	display:flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh
+	min-height: 100vh;
+	min-width: 100vw;
 }
 
 /* Start style of container */
@@ -20,7 +21,6 @@ body{
 	box-sizing: border-box;
 	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
-	transform: translateY(10);
 }
 
 /* Start header parts */
@@ -63,20 +63,35 @@ h2{
 
 p.faded{
 	font-size: 10px;
+	color:hsl(179, 43%, 75%);
+	/* Below two lines are used to align per month in the center */
+	display: flex;
+	align-items: center;
+	
 }
 
 p.faded strong{
 	font-size:30px;
+	color:white;
+	/* below is used to keep space from right */
+	margin:6px;
+
 }
 
 button{
 	border-style: none;
-	border-radius:12px; 
+	border: radius 6px; 
 	background-color: hsl(71, 73%, 54%);
+	width: 100%;
+	box-shadow: 0 5px 8px 0  rgba(0, 0, 0, 0.2);
+	align-items:center;
 	color:white;
-	width: 200px;
-	height: 50px;	
-	box-shadow: 0 5px 8px 0  rgba(0, 0, 0, 0.2)
+	font-family: "karla", sans-serif;
+	font-weight:700;
+
+	margin-top:15px;
+	font-size:20px;
+	padding:20px 0;
    }
 
 /* Starts second grid of 'Monthly Subscription'*/
