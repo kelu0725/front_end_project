@@ -1,0 +1,79 @@
+/*Use google fonts to search for fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+/*Box-sizing: width includes padding+border
+  Use preview mouse tools to check picture width, height
+*/
+*{
+	box-sizing:border-box;
+}
+
+
+body{
+    background-image:url("favicon-32x32.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+	float:right;
+	size:20px;
+}
+
+/*.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
+.container{
+	max-width: 1200px;
+	border: 100px;
+	padding: 80px;
+	background-color: hsl(0, 0%, 98%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1)
+}
+
+
+/*select all div elements where parent is grid-continer*/
+.header{
+	max-width: 500px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.content{
+	padding: 33px;
+	width: 1200px;
+	height: 600px;
+}
+
+.col-3{
+  	width: 32%;
+  	padding: 5px;
+  	float: left;
+}
+
+.card{
+	border-top-style:solid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width: 300px;
+	height: 200px;
+	padding: 20px;
+
+}
+
+h1{
+	font-weight:600;
+
+}
+
+
+h2{
+	font-weight: 400; 
+}
+p{
+	color:hsl(229, 6%, 66%);
+}
+
