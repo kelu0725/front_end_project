@@ -2,78 +2,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 
-/*Box-sizing: width includes padding+border
+/*Box-sizing: width includes padding + border
   Use preview mouse tools to check picture width, height
 */
 *{
 	box-sizing:border-box;
 }
 
-
 body{
-    background-image:url("favicon-32x32.png");
-    background-size: 100px;
+    background-color:hsl(0, 0%, 98%);
     background-repeat: no-repeat;
-    font-family: "Poppins", sans-serif;
+	font-family: "Poppins", sans-serif;
+	/* Below is used to center all blocks */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+/* Start header div */
 
-img{
-	float:right;
-	size:20px;
-}
-
-/*.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}*/
-.container{
-	max-width: 1200px;
-	border: 100px;
-	padding: 80px;
-	background-color: hsl(0, 0%, 98%);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1)
-}
-
-
-/*select all div elements where parent is grid-continer*/
 .header{
-	max-width: 500px;
-	margin: 50px auto;
+	width: 1300px;
+	margin: 15px auto;
 	text-align: center;
 }
 
-.content{
-	padding: 33px;
-	width: 1200px;
-	height: 600px;
+h1.grey-text{
+	font-weight:200;
+	color:grey;
+	margin:0 auto;
 }
 
-.col-3{
-  	width: 32%;
-  	padding: 5px;
-  	float: left;
+h1.black-text{
+	font-weight: 400;
+	color:black; 
+	margin:0 auto;
+}
+.header p{
+	color:hsl(229, 6%, 66%);
+	font-weight: 600;
+	opacity: 70%;
+}
+
+/* Start cards container */
+
+.container{
+	/* width: 1300px */
+	margin:0 auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
 }
 
 .card{
-	border-top-style:solid;
+	margin:15px 15px;
+	padding: 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-	width: 300px;
-	height: 200px;
-	padding: 20px;
-
+	width: 350px;
+	border-radius: 5px;
+	/* trick: add red border */
+	position: relative;
+	/* trick: overflow on the top of border */
+	overflow: hidden;
+}
+/* trick: set a border on top */
+.card::after{
+	content:"";
+	height:5px;
+	width: 100%;
+	top:0;
+	left:0;
+	position:absolute;
 }
 
-h1{
-	font-weight:600;
+.card-red::after{
+	background-color:red;
+}
+.card-cyan::after{
+	background-color:cyan;
+}
+.card-blue::after{
+	background-color:blue;
+}
+.card-orange::after{
+	background-color:orange;
+}
 
+.card-push{
+	transform: translateY(50%);
+}
+
+img{
+	display:block;
+	margin-left:auto;
+	size:15px;
+}
+
+.card h2{
+	size:10px;
+	font-size: 400;
+}
+.card p{
+	font-family: 200;
+	size:10px;
+	color:grey;
+}
+
+@media (max-width:800px){
+	.card{
+		transform: translateY(0);
+	}
 }
 
 
-h2{
-	font-weight: 400; 
-}
-p{
-	color:hsl(229, 6%, 66%);
-}
+
 
