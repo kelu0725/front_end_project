@@ -8,7 +8,7 @@ body {
     background-image: url('./images/bg-desktop.svg');
     background-color: hsl(257, 40%, 49%);
     font-family: "Open Sans", sans-serif;
-    justify-content:center;
+    /* justify-content:center; */
     /* align-items: center; */
     background-repeat: no-repeat;
     background-size:cover;
