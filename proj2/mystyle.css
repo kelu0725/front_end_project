@@ -14,14 +14,14 @@ body{
     background-repeat: no-repeat;
 	font-family: "Poppins", sans-serif;
 	/* Below is used to center all blocks */
-	display: flex;
+	/* display: block;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 }
 /* Start header div */
 
 .header{
-	width: 1300px;
+	width: 600px;
 	margin: 15px auto;
 	text-align: center;
 }
@@ -46,7 +46,7 @@ h1.black-text{
 /* Start cards container */
 
 .container{
-	/* width: 1300px */
+	width: 1140px;
 	margin:0 auto;
 	display: flex;
 	flex-wrap:wrap;
@@ -54,10 +54,11 @@ h1.black-text{
 }
 
 .card{
-	margin:15px 15px;
-	padding: 15px;
+	margin:15px;
+	padding: 30px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 	width: 350px;
+	height:256px;
 	border-radius: 5px;
 	/* trick: add red border */
 	position: relative;
@@ -107,10 +108,14 @@ img{
 	color:grey;
 }
 
-@media (max-width:800px){
+@media (max-width:775px){
 	.card{
-		transform: translateY(0);
+		width: 60%;
 	}
+	.card-push{
+		transform: translateY(0)
+	} 
+	
 }
 
 
