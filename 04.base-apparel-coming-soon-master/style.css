@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(
+		135deg,
+		hsl(0, 0%, 100%),
+		hsl(0, 100%, 98%)
+    );
+    font-family:"Josefin Sans", sans-serif;
+}
+
+.container{
+    /* max-width: 100%; */
+    min-height: 100vh;
+    display: flex;
+}
+
+
+
+.left{
+   width:60%;
+   padding: 0 40px 40px;
+   margin:0% 0%;
+   background-image: url('./images/bg-pattern-desktop.svg');
+   background-position:center center;
+   color:hsl(0, 36%, 70%);
+}
+
+/* Inner container is used to set position of the button and set margin */
+.inner-container{
+    max-width: 450px;
+    margin: auto;
+    position:relative;
+
+}
+
+
+.right{
+    background-image:url('./images/hero-desktop.jpg');
+    background-size:cover;
+    background-position: center center;
+    width:40%;
+}
+
+.logo{
+    margin:20px auto
+}
+
+
+h1{
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 1.1;
+   
+}
+h1 span{
+    color:black;
+}
+
+
+
+form{
+    position:relative;
+}
+
+input.email{
+    border: 1px solid hsl(0, 36%, 70%);;
+    background-color:transparent;
+    width:100%;
+    height:55px;
+    color:hsl(0, 36%, 70%);
+    border-radius:50px;
+}
+
+
+button.btn_submit{
+    border:1px none;
+    border-radius: 45%;
+    background-image: linear-gradient(to right,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    width: 100px;
+    height: 55px;
+    padding:10px 10px;
+    position:absolute;
+    right:0;
+    top:0;
+    cursor: pointer;
+}
+
+.err-text{
+    display:none;
+    margin:10px;
+}
+form.error .err-text{
+    display:block;
+}
+
+.err-icon{
+    display:none;
+    position:absolute;
+    right:110px;
+    top:15px;
+}
+form.error .err-icon{
+    display:block;
+}
+
+
