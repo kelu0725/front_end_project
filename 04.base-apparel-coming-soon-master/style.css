@@ -38,7 +38,9 @@ body{
 
 }
 
-
+.hero-mobile{
+    display: none;;
+}
 .right{
     background-image:url('./images/hero-desktop.jpg');
     background-size:cover;
@@ -74,13 +76,17 @@ input.email{
     width:100%;
     height:55px;
     color:hsl(0, 36%, 70%);
-    border-radius:50px;
+    border-radius:60px;
+}
+input:focus {
+	border-width: 2px;
+	box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+	outline: none;
 }
 
-
 button.btn_submit{
-    border:1px none;
-    border-radius: 45%;
+    border: none;
+    border-radius: 50px;
     background-image: linear-gradient(to right,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
     width: 100px;
     height: 55px;
@@ -89,6 +95,7 @@ button.btn_submit{
     right:0;
     top:0;
     cursor: pointer;
+    box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .err-text{
@@ -97,6 +104,16 @@ button.btn_submit{
 }
 form.error .err-text{
     display:block;
+}
+form.error input.email{
+    border:2px solid hsl(0, 93%, 68%);
+}
+input.email:active{
+    border:2px solid hsl(0, 6%, 24%);
+}
+
+button.btn_submit:active{
+    background-image: linear-gradient(to right, hsl(0, 0%, 100%),hsl(0, 80%, 86%));
 }
 
 .err-icon{
@@ -110,3 +127,21 @@ form.error .err-icon{
 }
 
 
+@media screen and (max-width:375px){
+    .logo{
+        width:100px;
+        margin:20px 0
+    }
+    .right{
+        display: none;
+    }
+    .hero-mobile{
+        display:block;
+        margin-left:-40px;
+        margin-right:-40px;
+        width:calc( 100% + 80px);
+    }
+    .left{
+        width:100%;
+    }
+}
