@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    --blue: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    --vl-grayish-blue:hsl(240, 78%, 98%);
+    --l-grayish-blue:hsl(234, 14%, 74%);
+    --grayish-blue:hsl(233, 13%, 49%);
+    --d-grayish-blue:hsl(232, 13%, 33%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+}
+
+body{
+    background-image:url('./images/bg-bottom.svg'), url('./images/bg-top.svg');
+    background-position:left bottom, right top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color:var(--vl-grayish-blue)
+}
+
+.container{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.headers{
+    width:100%;
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.header{
+    width:100%;
+}
+
+.toggle-btn{
+    border:1px solid none;
+    height:25px;
+    width:50px;
+    display:inline-block;
+    border-radius: 30px;
+    background-image: var(--blue);
+    padding:4px;
+  
+}
+.toggle-inner-circle{
+    height:25px;
+    width:25px;
+    border-radius: 50px;
+    background-color:white;
+    transition: .4s ease-in-out;
+}
+.toggle-inner-circle.active{
+    margin-left:25px;
+}
+
+
+
+
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin:40px auto;
+}
+.card{
+    border:1px solid;
+    align-items: center;
+    justify-content: center;
+}
