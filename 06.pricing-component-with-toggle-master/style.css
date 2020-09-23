@@ -178,6 +178,21 @@ button{
     color:var(--n-blue)
 }
 
+@media screen and (max-width:375px){
+    .cards{
+        display:flex;
+        flex-direction: column;
+    }
+    .card.middle{
+        transform:scale(1);
+    }
+
+    body{
+        background-image:url('./images/bg-top.svg');
+        background-position:100% -100%;
+    }
+}
+
 
 /* .toggle-btn{
     border:1px solid none;
