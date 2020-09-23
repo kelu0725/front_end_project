@@ -16,61 +16,76 @@
 </head>
 <body>
   <div class="container">
-    <div class = "headers">
-      <div class="header">
-      <h1>Our Pricing</h1>
-    </div>
-      <div>Annually</div>
-<!-- Draw toggle button -->
-        <div class="toggle-btn">
+
+    <!-- Previous toggle button: use JS toggle function
+   <div class="toggle-btn">
           <div class="toggle-inner-circle" onclick="this.classList.toggle('active')">
           </div>
-        </div>
+   </div> -->
 
-        <div>Monthly</div>
+    <div class = "header">
+       <h1>Our Pricing</h1>
+
+       <div class="toggle-container">
+          <span>Annually</span>
+<!-- Draw toggle button: use checkbox -->
+            <span class="toggle-btn">
+              <input type = "checkbox" name="toggle" id="toggle" onclick="changePrice()"/>
+              <label for="toggle"> 
+                <div class="circle"></div>
+              </label>
+            </span>
+<!--End of Draw toggle button -->
+        <span>Monthly</span>
+      </div>
     </div>
-  <div class="cards">
-  <div class="card">
-   <p>Basic</p>
-    <h2>&dollar;19.99</h2>
-    <h2>&dollar;199.99</h2>
-  <ul>
-    <li>500 GB Storage</li>
-    <li>2 Users Allowed</li>
-    <li>Send up to 3 GB</li>
-  </ul>
-  <button>Learn More</button>  
+
+  <div class="cards" id="cards">
+    
+    <div class="card" id="card">
+      <p>Basic</p>
+      <h3 class="monthly">&dollar;19.99</h3>
+      <h3 class="annually">&dollar;199.99</h3>
+      <ul>
+        <li>500 GB Storage</li>
+        <li>2 Users Allowed</li>
+        <li>Send up to 3 GB</li>
+      </ul>
+    <button>Learn More</button>  
   </div>
 
-<div class="card">  
-  <p>Professional</p>
-  <h2>&dollar;24.99</h2>
-  <h2>&dollar;249.99</h2>
-  <ul>
-    <li>1 TB Storage</li>
-    <li>5 Users Allowed</li>
-    <li>Send up to 10 GB</li>
-  </ul>
-  <button>Learn More</button>
-</div>
+    <div class="card middle" id="card">  
+      <p>Professional</p>
+      <h3 class="monthly">&dollar;24.99</h3>
+      <h3 class="annually"> &dollar;249.99</h3>
+      <ul>
+        <li>1 TB Storage</li>
+        <li>5 Users Allowed</li>
+        <li>Send up to 10 GB</li>
+      </ul>
+    <button>Learn More</button>
+  </div>
 
-<div class="card">
-  <p>Master</p>
-  <h2>&dollar;39.99</h2>
-  <h2>&dollar;399.99</h2>
-  <ul>
-    <li>2 TB Storage</li>
-    <li>10 Users Allowed</li>
-     <li>Send up to 20 GB</li>
-  </ul>
-  <button>Learn More</button>
-</div>
-</div>
+    <div class="card" id="card">
+      <p>Master</p>
+      <h3 class="monthly">&dollar;39.99</h3>
+      <h3 class="annually">&dollar;399.99</h3>
+      <ul>
+        <li>2 TB Storage</li>
+        <li>10 Users Allowed</li>
+        <li>Send up to 20 GB</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+  </div>
 </div>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+  <script src="script.js"></script>
 </body>
+
+
 </html>
